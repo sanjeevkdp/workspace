@@ -1,0 +1,16 @@
+package com.niit.craftvilla;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+ public static void main(String args[])
+ {
+	 AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext();
+	 context.scan("com.niit.craftvilla");
+	 context.refresh();
+	 Category category= (Category) context.getBean("category");
+	 category.getId("1");
+	 category.getName("sanjeev");
+	 
+ }
+}

@@ -1,0 +1,10 @@
+/// <reference path = "./angular.min.js"/>
+
+(function() {
+	var myApp = angular.module("app", []);
+	app.controller('allProductsCtrl', function($scope, $http) {
+		$http.get('WebProject/product/all').success(function(data) {
+			$scope.listOfProducts = data;
+		});
+	})
+});

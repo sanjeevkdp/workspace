@@ -1,0 +1,22 @@
+1471237355896	Encapsulate field 'customer'
+1471238963779	Encapsulate field 'emailAddress'
+1471239033412	Encapsulate field 'shippingAddress'
+1471239040333	Encapsulate field 'billingAddress'
+1471240758389	Encapsulate field 'customerId'
+1471240841122	Delete element
+1471242786567	Encapsulate field 'enabled'
+1471249471616	Encapsulate field 'customer_name'
+1471264772849	Rename type 'users'
+1471413995833	Delete element
+1471414006085	Delete element
+1471417319826	Encapsulate field 'product_id'
+1471580073317	Delete element
+1471580096310	Delete element
+1471580105849	Delete element
+1471580216501	Delete element
+1471580224445	Delete element
+1471580260583	Delete element
+1471580270386	Delete element
+1471608796798	Delete element
+1471613663002	Encapsulate field 'customerId'
+1471638909662	Rename type 'Order'

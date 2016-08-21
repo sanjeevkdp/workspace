@@ -1,0 +1,10 @@
+package com.niit.dao;
+
+public interface OrderItemsDao {
+void saveOrUpdate(OrderItems orderItems );
+	
+	void delete(String orderItem_id);
+	
+	List<OrderItems> listOrderItems();
+
+}

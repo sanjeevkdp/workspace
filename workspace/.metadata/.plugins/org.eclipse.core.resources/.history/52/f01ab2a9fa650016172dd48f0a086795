@@ -1,0 +1,22 @@
+package com.niit.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.niit.model.ShippingAddress;
+
+@Controller
+public class FlowController {
+	
+	
+	
+	public FlowController initFlow() {
+		return new FlowController();
+	}
+	 
+	public String addShippingAddress(ShippingAddress shippingAddress){
+		return "success";
+		
+	}
+	
+
+}

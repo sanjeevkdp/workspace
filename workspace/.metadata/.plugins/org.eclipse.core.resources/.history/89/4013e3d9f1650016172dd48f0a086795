@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:web="http://www.springframework.org/schema/web"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/webflow/spring-webflow.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/web/spring-web.xsd">
+       
+       
+       
+       <on-start>
+		<evaluate expression="flowController.initFlow()" result="flowscope.customerDetails" />
+	</on-start>
+
+	<view-state id="checkout" view="cart/customerDetails" model="flowscope.scustomerDetails">
+		<transition on="submitCustomer" to="confirmationDetails" />
+	</view-state>
+       
+        </flow>

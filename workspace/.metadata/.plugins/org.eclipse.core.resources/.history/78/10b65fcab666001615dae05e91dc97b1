@@ -1,0 +1,8 @@
+var productApp=angular.modul("productApp",[]);
+productApp.controller("productCtrl",functio($scope){
+	
+	
+	
+	
+	
+});

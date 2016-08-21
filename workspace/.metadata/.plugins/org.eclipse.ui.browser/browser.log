@@ -1,0 +1,5 @@
+
+Aug 06, 2016 10:29:17.02 NEW SESSION
+Aug 06, 2016 10:29:17.02 [2528:3096:0806/102916:ERROR:ssl_client_socket_impl.cc(1154)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 06, 2016 10:29:17.15 [2528:3096:0806/102917:ERROR:ssl_client_socket_impl.cc(1154)] handshake failed; returned -1, SSL error code 1, net_error -101
+Aug 06, 2016 10:29:17.29 [2528:3096:0806/102917:ERROR:ssl_client_socket_impl.cc(1154)] handshake failed; returned 0, SSL error code 1, net_error -157

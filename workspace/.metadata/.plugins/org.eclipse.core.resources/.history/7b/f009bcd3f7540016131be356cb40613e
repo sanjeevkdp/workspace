@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.*" %>
+<%@page import="com.niit.dao.*" %>
+<%@page import="com.niit.model.*" %>
+<%@page import="com.niit.test.*" %>
+
+
+<%@ include file="./shared/header.jsp"%>
+
+
+<%@ include file="./shared/menu.jsp"%>
+
+
+
+<div>
+<table>
+<thead>
+   <tr>
+</div>
+				
+							<%
+								for (int i = 0; i < Product.size(); i++) {
+							%>
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"><br/>
+								<div class="thumbnail">
+									<img class="img-responsive img-rounded"
+										src="./images/<%=prdt.get(i).getImageUrl()%>" style="height:100px;width:200px;" />
+									<h3><%=prdt.get(i).getName()%></h3>
+									<h4>
+										Type:
+										<%=prdt.get(i).getBrand()%></h4>
+									<p>
+										Price:
+										<%=prdt.get(i).getPrice()%></p>
+								</div>
+								</div>
+							<%
+								}
+							%>
+				
+			</div>
+   </tr>
+</thead>
+
+</table>
+
+
+
+
+</div>

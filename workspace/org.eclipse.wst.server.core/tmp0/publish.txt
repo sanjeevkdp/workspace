@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Jul 26 10:04:40 IST 2016
+org.eclipse.jst.j2ee.server\:WebProjectBackend=WEB-INF/lib/WebProjectBackend-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\sanjeev\\.m2\\repository\\org\\springframework\\spring-web\\4.3.1.RELEASE\\spring-web-4.3.1.RELEASE.jar=WEB-INF/lib/spring-web-4.3.1.RELEASE.jar

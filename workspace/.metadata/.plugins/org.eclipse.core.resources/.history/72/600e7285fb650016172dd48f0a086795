@@ -1,0 +1,31 @@
+package com.niit.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Controller;
+
+import com.niit.dao.CustomerDao;
+import com.niit.model.Customer;
+import com.niit.model.ShippingAddress;
+
+@Controller
+public class FlowController {
+	@Autowired
+	Customer customer;
+	@Autowired
+	CustomerDao customerDao;
+	
+	
+	public FlowController initFlow() {
+		return new FlowController();
+	}
+	 
+	public String addShippingAddress(ShippingAddress shippingAddress){
+		
+		customer=customerDao.getCustomerByUserName(SecurityContextHolder.getContext().getAuthentication().getName());
+		return "success";
+		
+	}
+	
+
+}

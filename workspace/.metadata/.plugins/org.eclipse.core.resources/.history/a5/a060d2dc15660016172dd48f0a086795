@@ -1,0 +1,42 @@
+package com.niit.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.niit.model.Order;
+
+public class OrderDaoImpl {
+	@Autowired
+	SessionFactory sessionFactory;
+
+	public OrderDaoImpl(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	@Transactional
+	public void saveOrUpdate(Order orderDetail) {
+		sessionFactory.getCurrentSession().saveOrUpdate(orderDetail);
+
+	}
+
+	@Transactional
+	public void delete(String orderDetailId) {
+		Order orderDetailTodelete = new Order();
+		orderDetailTodelete.setOrder_id(orderDetailId);
+
+	}
+
+	@Transactional
+	public List<Order> listOrder() {
+		String hql="from Order";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		List<Order> listOfOrder = query.getResultList();
+		return listOfOrder;
+	}
+
+
+}

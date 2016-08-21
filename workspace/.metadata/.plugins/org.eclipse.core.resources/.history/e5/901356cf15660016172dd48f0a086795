@@ -1,0 +1,33 @@
+package com.niit.dao;
+
+public class OrderDaoImpl {
+	@Autowired
+	SessionFactory sessionFactory;
+
+	public OrderDetailDAOImpl(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	@Transactional
+	public void saveOrUpdate(OrderDetail orderDetail) {
+		sessionFactory.getCurrentSession().saveOrUpdate(orderDetail);
+
+	}
+
+	@Transactional
+	public void delete(String orderDetailId) {
+		OrderDetail orderDetailTodelete = new OrderDetail();
+		orderDetailTodelete.setOrderDetailId(orderDetailId);
+
+	}
+
+	@Transactional
+	public List<OrderDetail> listOrderDetails() {
+		String hql="from OrderDetail";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		List<OrderDetail> listOfOrderDetails = query.getResultList();
+		return listOfOrderDetails;
+	}
+
+
+}

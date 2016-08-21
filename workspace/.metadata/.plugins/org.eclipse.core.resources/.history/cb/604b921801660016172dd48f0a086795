@@ -1,0 +1,18 @@
+package com.niit.dao;
+
+import java.util.List;
+
+import com.niit.model.BillingAddress;
+import com.niit.model.Supplier;
+
+public interface BillingAddressDao {
+void saveOrUpdate(BillingAddress billingAddress);
+	
+	void editSupplier(BillingAddress billingAddress);
+
+	void delete(String id);
+
+	BillingAddress get(String id);
+
+	public List<BillingAddress> list();
+}

@@ -1,0 +1,9 @@
+package com.niit.model;
+
+public class Order {
+	private String order_id;
+	private Cart cart;
+	private BillingAddress billingAddress;
+	private ShippingAddress shippingAddress;
+
+}

@@ -1,0 +1,6 @@
+/// <reference path = "./angular.min.js"
+var productApp=angular.module("productApp",[]);
+productApp.controller("product",function($scope ){
+	
+		
+});

@@ -1,0 +1,12 @@
+package com.niit.model;
+
+public class OrderItems {
+
+	
+	@Id
+	private String order_id;
+	private String customerId;
+	private String product_id;
+	private double totalPrice;
+	private int quantity;
+}

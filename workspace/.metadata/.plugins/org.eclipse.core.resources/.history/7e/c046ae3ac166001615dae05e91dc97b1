@@ -1,0 +1,11 @@
+/// <reference path = "./angular.min.js"/>
+var productApp=angular.module("productApp",[]);
+productApp.controller("product",function($scope ){
+	
+	(function(){
+		var myApp = angular.module("app",[]);
+		myApp.controller("allProductsCtrl",$scope,$http){
+			$http.get('WebProject/product/all')
+		}
+	})
+});

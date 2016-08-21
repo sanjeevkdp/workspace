@@ -1,0 +1,12 @@
+var productApp=angular.modul("productApp",[]);
+productApp.controller("product",function($scope ,$http){
+	$http.get('http://localhost:8080/WebProject/product/all')
+	.success(function(data){
+		$scope.listOfProducts=data;
+	});
+	
+	
+	
+	
+	
+});

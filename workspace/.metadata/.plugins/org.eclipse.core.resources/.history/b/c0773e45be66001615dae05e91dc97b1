@@ -1,0 +1,8 @@
+var productApp=angular.modul("productApp",[]);
+productApp.controller("product",function($scope ){
+	$scope.productList=[
+	                    
+	                    
+	                    ];
+		
+});

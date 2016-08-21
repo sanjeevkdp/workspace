@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<c:forEach items="${products}" var="product">
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 productDiv" href="${contextPath}/productDetail/${product.product_id}">
+					<img src="${images}/product/${product.productId}.png"
+						class="img-rounded img-thumbnail" alt="${product.product_name }"
+						title="${product.product_name }"
+						style="height: 120px; width: 170px;" />
+					<p class="pricePara">
+						<b><span class="fa fa-inr"></span> ${product.unit_price}</b>
+					</p>
+						<h4>${product.product_name}</h4> 
+					<h5>${product.description}</h5>
+
+				</div>
+		</c:forEach>

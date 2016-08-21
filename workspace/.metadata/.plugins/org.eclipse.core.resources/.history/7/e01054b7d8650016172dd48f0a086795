@@ -1,0 +1,16 @@
+package com.niit.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Table
+@Component
+public class Card {
+
+	
+	private String Card_id;
+	private 
+}

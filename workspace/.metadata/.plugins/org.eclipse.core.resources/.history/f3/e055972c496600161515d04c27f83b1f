@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+	
+	
+<div id="content" class="bottom-border-shadow">
+	<div class="container background-white bottom-border">
+		<div class="row margin-vert-30">
+
+			<div class="container-wrapper">
+				<div class="container">
+					<section>
+						<div class="jumbotron">
+							<div class="container">
+								<h1>								<p>Your Product should Deliverd Soon!</p>
+</h1>
+							</div>
+						</div>
+
+					</section>
+					<section class="container" >
+					<%
+				int i = 1;
+					int j=0;
+			%>
+						<div>
+						<c:choose>
+	     	<c:when test="${not empty cartEmpty}">
+			<h2 style="margin: auto;text-align:center;">No products in cart</h2>
+	       	</c:when>
+	           
+	</c:choose>
+							<a href="${contextPath}/product" class="btn btn-default pull-left">Continue
+								Shopping</a>
+						</div>
+
+
+					</section>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

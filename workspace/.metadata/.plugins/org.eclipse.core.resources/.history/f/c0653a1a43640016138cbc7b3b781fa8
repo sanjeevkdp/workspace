@@ -1,0 +1,36 @@
+package com.niit.model;
+
+import javax.persistence.Id;
+
+public class Cart {
+	@Id
+	private String cartId;
+	
+	private String customerId;
+	private double grandTotal;
+	private int noOfProducts;
+	public String getCartId() {
+		return cartId;
+	}
+	public void setCartId(String cartId) {
+		this.cartId = cartId;
+	}
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public double getGrandTotal() {
+		return grandTotal;
+	}
+	public void setGrandTotal(double grandTotal) {
+		this.grandTotal = grandTotal;
+	}
+	public int getNoOfProducts() {
+		return noOfProducts;
+	}
+	public void setNoOfProducts(int noOfProducts) {
+		this.noOfProducts = noOfProducts;
+	}
+}

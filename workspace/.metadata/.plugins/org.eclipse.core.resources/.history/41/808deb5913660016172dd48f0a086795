@@ -1,0 +1,47 @@
+package com.niit.model;
+
+import javax.persistence.Id;
+
+public class OrderItems {
+
+	
+	@Id
+	private String orderItems_id;
+	private String customerId;
+	private String product_id;
+	private double totalPrice;
+	private int quantity;
+	public String getOrder_id() {
+		return order_id;
+	}
+	public void setOrder_id(String order_id) {
+		this.order_id = order_id;
+	}
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getProduct_id() {
+		return product_id;
+	}
+	public void setProduct_id(String product_id) {
+		this.product_id = product_id;
+	}
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	public OrderItems(){
+		this.
+	}
+}

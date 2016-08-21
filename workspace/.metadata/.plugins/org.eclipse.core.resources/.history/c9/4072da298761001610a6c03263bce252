@@ -1,0 +1,14 @@
+ body{
+ background-color: whitesmoke;
+ } 
+ 
+ 
+ 
+.table td{
+	vertical-align: center;
+}
+footer { 
+    display: block;
+    color: black;
+    background-color: #000000;
+}

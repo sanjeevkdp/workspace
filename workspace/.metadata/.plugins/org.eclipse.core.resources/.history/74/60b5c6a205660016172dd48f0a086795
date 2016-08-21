@@ -1,0 +1,16 @@
+package com.niit.dao;
+
+public class CardDaoImpl implements CardDao {
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	public CardDaoImpl(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	
+	@Transactional
+	public void saveOrUpdate(Card card) {
+	sessionFactory.getCurrentSession().saveOrUpdate(card);
+
+	}
+}
